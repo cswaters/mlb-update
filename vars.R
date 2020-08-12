@@ -1,15 +1,17 @@
-## Email info ----
-to <- "corywaters@gmail.com" # where do you want to send the email to?
-from <- "c@rsquared-consulting.com" # the "sender's"email. is must gmail.
-subj <- mk_subj_line()
 
+# site we'll use http://stats.tcpalm.com/baseball/mlb-injuries.aspx
+
+## Email info ----
+to <- "you@example.com" # where do you want to send the email to?
+from <- "USE A GMAIL ADDRESS" # the "sender's"email. is must gmail.
+subj <- mk_subj_line()
 
 ## headers ----
 headers <- c(
   `Connection` = 'keep-alive',
   `Cache-Control` = 'max-age=0',
   `Upgrade-Insecure-Requests` = '1',
-  `User-Agent` = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.68 Safari/537.36',
+  `User-Agent` = '',
   `Accept` = 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
   `Referer` = 'http://stats.tcpalm.com/sports-scores/Baseball-Scores-Matchups.aspx',
   `Accept-Language` = 'en-US,en;q=0.9'
